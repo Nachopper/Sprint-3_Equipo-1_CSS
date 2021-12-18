@@ -1,0 +1,674 @@
+/*body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(146, 226, 137);
+}*/
+
+nav ul {
+  list-style: none;
+  padding: 0; /*Story3*/
+}
+nav li {
+  line-height: 3rem;
+  position: relative;
+}
+.Menu ul {
+  position: absolute;
+}
+/*Define los atributos del texto y cómo se sombrea al pasar el ratón por encima*/
+nav a {
+  color: rgb(36, 17, 161);
+  display: table;
+  padding: 0 2.5em;
+  text-decoration: none;
+  transition: 0.4s;
+}
+/*Define los colores del sombreado al pasar el ratón por cada opción*/
+nav a:hover {
+  background: rgba(163, 9, 163, 0.5);
+}
+/*Define los atributos del diseño de la tabla de los menús*/
+.Menu {
+  background: rgb(201, 207, 27);
+  display: table;
+  width: 100%;
+}
+/*Desplazar menú a la izquierda*/
+.Menu {
+  float: left;
+}
+/*Color de listas debajo de menú*/
+nav li li {
+  background: rgb(161, 129, 13);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+  width: 200px;
+}
+nav li:hover > ul > li {
+  max-height: 1000px;
+  overflow: visible;
+}
+/*Separación entre menú y listas*/
+.Menu > li > ul {
+  top: 100%;
+}
+.Menu ul ul {
+  left: 100%;
+  top: 0;
+}
+.CONTACTOS {
+  /*Columnas y diseño Responsive*/
+  column-count: 1;
+  column-gap: 3em;
+  column-rule: 25px solid;
+  column-width: 200px;
+}
+/* Story 4 Imagenes*/
+.opacidad {
+  opacity: 0.9; /*Con esto puedes cambiar la opacidad de una imagen*/
+}
+/*Con cada uno de los fondos siguientes cambiamos el color del fondo de las imagenes
+  de los iconos poniendolos con sus respectivos colores y transparencias*/
+.fondoImagen {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.fondoImagenAbout {
+  background-color: rgba(194, 59, 6, 0.4);
+}
+.fondoImagenServices {
+  background-color: rgba(3, 4, 66, 0.6);
+}
+.fondoImagenContacto {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.fondoImagenLibre {
+  background-color: rgba(99, 84, 240, 0.9);
+}
+.reflexionDebajo {
+  /*Esto refleja la imagen exactamente igual debajo de esta*/
+  -webkit-box-reflect: below; /*El below pones la imagen debajo pero puedes cambiarlo por otra posicion para que se cambie*/
+}
+.reflexionDegradado {
+  /*Lo mismo que el de arriba pero este te pone la imagen con un gradual que desaparece*/
+  -webkit-box-reflect: below 0px
+    /*La distancia de la otra seria lo que pone 0px*/
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /*Esta es la que hace el cambio linear*/
+}
+.reposive {
+  /*Esto permite que cambie conforme el tamaño de donde este*/
+  max-width: 100%; /*Ocupara el 100% de la parte en la que este de ancho, cambiando conforme el tamaño de la localización de este*/
+  height: auto; /*Se ajusta segun el ancho de la imagen que esta al 100%*/
+}
+.centralizarImagen {
+  margin-left: auto; /*Story3*/
+  margin-right: auto; /*Story3*/
+  display: block; /*El elemento genera un cuadro de elemento bloque como por ejemplo un parrafo o un header*/
+  width: 100%;
+}
+.Iconoinicio {
+  /*Esto no es Story 4*/
+  width: 50%;
+  margin-right: auto; /*Story3*/
+  margin-left: auto; /*Story3*/
+}
+.position {
+  /*Story3*/
+  position: relative;
+  right: 135%;
+}
+.position1 {
+  /*Story3*/
+  position: relative;
+  right: 67.5%;
+}
+.position2 {
+  /*Story3*/
+  position: relative;
+  right: 0;
+}
+.position3 {
+  /*Story3*/
+  position: relative;
+  left: 67.5%;
+}
+.position4 {
+  /*Story3*/
+  position: relative;
+  left: 135%;
+}
+.centralizarUnPoco {
+  margin-left: auto; /*Story3*/
+  margin-right: auto; /*Story3*/
+  display: auto;
+  width: 50%;
+}
+.bordeImagen {
+  /*El borde que tiene una imagen
+                Si es cuadrada depende del porcentage que le pongas le redondea
+                mas o menos las esquinas*/
+  border-radius: 100%;
+}
+.containerImagen {
+  /*Este es un contenedor de la imagen*/
+  position: relative;
+  width: 100%;
+}
+.containerImagencita {
+  /*Este es lo mismo que el anterior pero mas pequeño*/
+  position: relative;
+  width: 50%;
+}
+.imagenes {
+  /*Esto se pone para identificar la imagen y convertirlo en bloque y acerla responsive*/
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sobreponer {
+  /*Esto sera una variable que se pondra sobre una imagen cuando te pongas encima*/
+  position: absolute; /*La posicion no varia en el fondo y no ocupa espacio para las demas*/
+  bottom: 100%; /*Que lo rellene entero, hasta abajo*/
+  left: 0;
+  right: 0;
+  background-color: #c12828; /*Esto cambia el color del fondo de la imagen que se sobrepone*/
+  overflow: hidden; /*Que este oculta de serie hasta que se active*/
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease; /*La animacion que tiene con el tiempo que tarda y tipo*/
+}
+.sobreponer2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #c12828; /*Esto cambia el color del fondo de la imagen que se sobrepone*/
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 51%; /*Para poner los bordes redondeados*/
+}
+
+.containerImagen:hover .sobreponer {
+  /*Para cuando te pones encima aplica la clase sobreponer y ocupa el 100% del container donde esta*/
+  bottom: 0;
+  height: 100%;
+}
+.containerImagencita:hover .sobreponer2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.textitoImagen {
+  /*El texto que aparece encima de sobreponer cuando ocurre*/
+  white-space: nowrap; /*Crea todo el texto en una linea, da igual el sitio donde este*/
+  color: black; /*Esto cambia el color de la letra*/
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%; /*Distancia de arriba*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /*Que aparezca con las animaciones*/
+}
+.tablaResponsive {
+  /*Esto no pertenece a Story 4*/
+  width: 100%;
+}
+
+/* Story 2 - ADOLFO SALADO */
+
+h1 {
+  font-family: "Helvetica", "serif"; /* STORY 2.- FUENTES - Apartado A */ /* STORY 2.- FUENTES - Apartado C */
+  font-size: 10px; /* STORY 2.- FUENTES - Apartado B */
+  text-align: center; /* STORY 2.- ALINEACIÓN - Apartado E */
+  text-decoration: underline; /* STORY 2.- FORMATO - Apartado F */ /*SUBRAYADO*/
+  text-shadow: 1px 2px 3px black; /* STORY 2.- FORMATO - Apartado G */
+  font-weight: bold; /* STORY 2.- ALINEACIÓN - Apartado H */ /*GROSOR DEL TEXTO*/
+  text-transform: capitalize; /* STORY 2.- FORMATO - Apartado 9 */
+}
+
+body {
+  font-family: Garamond, serif; /* STORY 2.- FUENTES - Apartado A */ /* STORY 2.- FUENTES - Apartado C */
+  font-size: 15px; /* STORY 2.- FUENTES - Apartado B */
+  text-align: justify; /* STORY 2.- ALINEACIÓN - Apartado E */
+  margin: max-width 15%; /*Story3*/
+}
+
+p {
+  text-align: justify; /* STORY 2.- ALINEACIÓN - Apartado E */
+  line-height: 1.8; /* STORY 2.- ESPACIADO - Apartado K */
+  word-spacing: 5px; /* STORY 2.- ESPACIADO - Apartado L */ /*ESPACIO ENTRE PALABRAS*/
+  text-indent: 20px; /* STORY 2.- FORMATO - Apartado M */
+}
+
+ol {
+  text-decoration: line-through; /* STORY 2.- FORMATO - Apartado F */ /*ATRAVESAR EL TEXTO*/
+}
+/* LINKS - ETIQUETAS A */
+a {
+  /* Color links */
+  /* STORY 2.- LINKS - Apartado O */
+  text-align: left;
+  color: rgba(243, 11, 88, 0.945); /*Es el color de todos las A*/
+  text-decoration: none;
+}
+
+a:visited {
+  /*Cuando un link es visitado, cambia de color*/
+  /* STORY 2.- LINKS - Apartado P */
+  color: hotpink;
+}
+
+a:hover {
+  /*Cuando se pone el puntero sobre un link*/
+  /* STORY 2.- LINKS - Apartado P */
+  color: yellow;
+}
+
+a:active {
+  color: blue;
+}
+
+.titulosBlancos {
+  /*Características de los títulos en blanco*/
+  font-size: calc(12px + 2vw); /*Responsive text*/
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: none; /*Quitamos cualquier tipo de decoración*/
+  outline-style: outset; /*Establecemos los bordes por fuera*/
+}
+
+.textosBlancos {
+  /*Características de los textos en blanco*/
+  color: white;
+  text-shadow: 3px 3px 3px black; /*Sombra al texto*/
+  text-indent: 25px; /*Hacer que aparezca más a la derecha la primera línea de los textos*/
+  font-size: calc(12px + 1.5vw);
+  text-align: justify;
+  line-height: 1.8; /*Altura entre líneas*/
+}
+
+/*FOOTER*/
+.footerBlanco {
+  color: white;
+  text-indent: 25px;
+  font-size: calc(4px + 1.5vw);
+  font-style: italic;
+  font-weight: bold; /*Hacer más grueso el texto*/
+}
+
+.footerNegro {
+  color: black;
+  text-indent: 25px;
+  font-size: calc(4px + 1.5vw);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/*LISTAS*/
+.listaBlanca {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 3px 3px 3px black;
+  font-size: 20px;
+}
+
+#listaPequeña {
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  text-decoration: overline; /* STORY 2.- FORMATO - Apartado F */
+  text-shadow: 3px 3px 3px black;
+}
+
+.textosCentrados {
+  text-align: center;
+}
+
+/*TEXTOS DE COLOR NEGRO*/
+.titulosNegros {
+  /*font-size: 25px;*/
+  font-size: 5vw;
+  color: black;
+  text-decoration: none;
+  font-family: "Space Mono", monospace; /* STORY 2.- FORMATO - Apartado F */
+}
+
+.textosNegros {
+  color: black;
+  /*text-shadow: 1px 1px 2px black;*/
+  text-indent: 15px;
+  font-size: calc(12px + 1.5vw);
+  text-align: justify;
+  font-family: "Trirong", sans-serif;
+  line-height: 1.8;
+}
+
+mark {
+  /*SUBRAYADOS*/
+  font-weight: bold;
+  font-size: 2.5vw;
+  text-decoration: line-through; /* STORY 2.- FORMATO - Apartado F */
+}
+
+.aumentarTitulosContacto {
+  font-size: calc(12px + 1.5vw);
+  font-weight: bold;
+}
+
+.textoFormulario {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.textoSinSombra {
+  font-size: 3vw;
+  text-indent: 10px;
+}
+
+#inicio {
+  font-size: 2.5vw;
+  text-align: justify;
+  font-style: italic;
+  text-indent: 15px;
+  font-family: "Fauna One", serif; /*Font Pairing - STORY 7: Apartado 10 */
+}
+
+#sobreNosotros {
+  font-size: 2.3vw;
+  text-align: center;
+  color: white;
+}
+
+.textoBlancoCentrado {
+  text-align: center;
+  font-size: 2.5vw;
+  color: white;
+  margin-left: 10%; /*Story3*/
+  font-style: bold;
+}
+
+.Sofia {
+  /*Google Font*/
+  font-family: "Sofia", sans-serif; /* STORY 2.- FUENTES - Apartado D */ /*FUENTE DE GOOGLE*/
+  font-size: calc(12px + 1.5vw);
+}
+
+.uppercase {
+  /*MAYÚSCULAS*/
+  font-size: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: Cinzel, serif; /*Font Pairing - STORY 7: Apartado 10 */
+}
+
+/* STORY 1.- FONDOS  (MARÍA)*/
+
+.index {
+  background: url(resources/images/mario4.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+}
+
+.aboutus {
+  background: url(resources/images/doom9.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.servicios {
+  background-image: url("resources/images/SonicFinal6.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.contacto {
+  background-image: url("resources/images/megaman5.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.libre {
+  background-image: url("resources/images/pacmanfin6.png");
+  background-size: 100%;
+}
+
+/*Capa semi transparente*/
+/* Este clase .trasparent es de prueba... Miguel*/
+.trasparentindex {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+/*capas semi transparentes. María */
+.trasparentlibre {
+  background-color: rgba(99, 84, 240, 0.9);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+.transparentservicios {
+  background-color: rgba(3, 4, 66, 0.6);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+.trasparentabout {
+  background-color: rgba(194, 59, 6, 0.4);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+.trasparentcontacto {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+/* Gradiente del footer (Contactos) */
+.gradiente {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 121, 35, 0.2) 35%,
+    rgba(145, 0, 255, 0.2) 83%
+  );
+}
+
+/*Story 5 Tablas*/
+.tabla_doom {
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: rgb(82, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+th {
+  background: rgba(241, 197, 1, 0.4);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Story6 Formulario */
+
+/* Div que contiene todo el formulario, lo deja centrado */
+.form_container {
+  margin: auto; /*Story 3*/
+  max-width: 550px;
+  box-align: center;
+}
+.form_group {
+  width: 100%;
+}
+/* clase que determina el estilo de los labels */
+.form_label {
+  padding-left: 2%;
+  height: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: calc(12px + 1.5vw);
+}
+/* clase que determina el estilo de los inputs */
+.form_input {
+  width: 100%;
+  height: calc(2.5em - 1.1rem);
+  border: 0px;
+  border-color: lightgreen;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.7);
+  /* es necesario para mostrar los iconos del placeholder */
+  font-family: "FontAwesome", Arial;
+}
+
+/* definimos estilos para el textarea */
+.form_textarea {
+  /* es necesario para mostrar los iconos del placeholder */
+  font-family: "Font Awesome 5 Free";
+  width: 100%;
+  /* quitamos el borde para luego modificarlo a nuestro gusto */
+  border: none;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* definimos estilos para el select */
+.form_select {
+  height: 2.1em;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* definimos estilos para el radio buton */
+.form_radio {
+  font-size: calc(8px + 1.5vw);
+  font-family: Arial, sans-serif;
+  color: #707070;
+}
+
+.form_margin_botton {
+  margin-bottom: 1rem; /*Story3*/
+}
+
+/* definismo estilos de los botones */
+.form_button {
+  width: 100%;
+  height: 1.6em;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem; /*Story3*/
+  /* quitamos el borde por defecto, luego lo modificamos */
+  border: 0px;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px -5px rgb(0, 0, 0);
+}
+/* cambia el color de los botones al ser pulsados */
+.form_button:focus {
+  background-color: rgb(183, 122, 241);
+  color: lightgray;
+}
+
+/* Para modificar el color de los bordes */
+.border_color {
+  border: 2px solid #ccc !important;
+  border-top-color: green !important;
+  border-top-style: solid !important;
+  border-top-width: 2px !important;
+  border-right-color: green !important;
+  border-right-style: solid !important;
+  border-right-width: 2px !important;
+  border-bottom-color: blueviolet !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 3px !important;
+  border-left-color: green !important;
+  border-left-style: solid !important;
+  border-left-width: 2px !important;
+}
+
+/* cambiar el color cuando se posa sobre el campo input o text area */
+.form_textarea:hover,
+.form_input:hover {
+  background: rgb(138, 43, 226, 0.3);
+}
+
+/* Tooltip contenedor */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip texto */
+.tooltip .tooltiptext {
+  font-family: Arial;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 10%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip flecha */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Muestra el Tooltip cuando pones el cursor por encima */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Columnas STORY 7*/
+/*EL .grid crea una estructura de columnas o filas y se van añadiendo con fr*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Query para representar y adaptar columnas y contenido a dispositivos moviles*/
+@media (max-width: 415px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.columnas3 {
+  column-count: 3;
+  column-rule: 1px solid #bbb;
+  column-width: 140px;
+}

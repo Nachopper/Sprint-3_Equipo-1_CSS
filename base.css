@@ -1,0 +1,63 @@
+nav ul {
+  list-style: none;
+  padding: 0; /*Story3*/
+}
+nav li {
+  line-height: 3rem;
+  position: relative;
+}
+nav a {
+  color: rgb(36, 17, 161);
+  display: table;
+  padding: 0 2.5em;
+  text-decoration: none;
+  transition: 0.4s;
+}
+nav li li {
+  background: rgb(161, 129, 13);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+  width: 200px;
+}
+h1 {
+  font-family: "Helvetica", "serif"; /* STORY 2.- FUENTES - Apartado A */ /* STORY 2.- FUENTES - Apartado C */
+  font-size: 10px; /* STORY 2.- FUENTES - Apartado B */
+  text-align: center; /* STORY 2.- ALINEACIÓN - Apartado E */
+  text-decoration: underline; /* STORY 2.- FORMATO - Apartado F */ /*SUBRAYADO*/
+  text-shadow: 1px 2px 3px black; /* STORY 2.- FORMATO - Apartado G */
+  font-weight: bold; /* STORY 2.- ALINEACIÓN - Apartado H */ /*GROSOR DEL TEXTO*/
+  text-transform: capitalize; /* STORY 2.- FORMATO - Apartado 9 */
+}
+
+body {
+  font-family: Garamond, serif; /* STORY 2.- FUENTES - Apartado A */ /* STORY 2.- FUENTES - Apartado C */
+  font-size: 15px; /* STORY 2.- FUENTES - Apartado B */
+  text-align: justify; /* STORY 2.- ALINEACIÓN - Apartado E */
+  margin: max-width 15%; /*Story3*/
+}
+
+p {
+  text-align: justify; /* STORY 2.- ALINEACIÓN - Apartado E */
+  line-height: 1.8; /* STORY 2.- ESPACIADO - Apartado K */
+  word-spacing: 5px; /* STORY 2.- ESPACIADO - Apartado L */ /*ESPACIO ENTRE PALABRAS*/
+  text-indent: 20px; /* STORY 2.- FORMATO - Apartado M */
+}
+
+ol {
+  text-decoration: line-through; /* STORY 2.- FORMATO - Apartado F */ /*ATRAVESAR EL TEXTO*/
+}
+/* LINKS - ETIQUETAS A */
+a {
+  /* Color links */
+  /* STORY 2.- LINKS - Apartado O */
+  text-align: left;
+  color: rgba(243, 11, 88, 0.945); /*Es el color de todos las A*/
+  text-decoration: none;
+}
+mark {
+  /*SUBRAYADOS*/
+  font-weight: bold;
+  font-size: 2.5vw;
+  text-decoration: line-through; /* STORY 2.- FORMATO - Apartado F */
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<div>
+<html class= "contacto" lang="es-ES">
+
+<!-- Metadatos de la web -->
+<head>
+    <title>PÁGINA DE CONTACTO</title> <!-- Título de la página -->
+		<meta charset="UTF-8"> <!-- Codifación de la web -->
+		<meta name="author" content="Equipo1"> <!-- Autor de la página web -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Formato responsivo -->
+        <link rel="stylesheet" href="estilos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli">
+    
+    </head>
+
+<body>
+        <div class="cabecera centralizarUnPoco">
+				<header>
+						<!--He cambiado la disposición de los enlaces y añadidos los iconos...María-->
+						<table>
+							<tr>
+							<!-- el href nos permite cambiar de seccion de la pagina web-->
+							<td><a href="index.html"><img class="reposive fondoImagenContacto position" src="resources/images/iconos/inicio4.png"style="width:150px;"><a/></td>
+							<td><a href="aboutus.html"><img class= "reposive fondoImagenContacto position1" src="resources/images/iconos/nosotros4.png"style="width:150px;"><a/></td>
+							<td><a href="servicios.html"><img class= "reposive fondoImagenContacto position2" src="resources/images/iconos/servicios4.png"style="width:150px;"><a/></td>
+							<td><a href="contacto.html"><img class= "reposive fondoImagenContacto position3" src="resources/images/iconos/contacto4.png"style="width:150px;"><a/></td>
+							<td><a href="libre.html"><img class= "reposive fondoImagenContacto position4" src="resources/images/iconos/libre4.png"style="width:150px;"><a/></td>
+							</table>
+						 </tr>
+
+				</header>
+			</div>
+
+    <body>
+    <div class="trasparentcontacto">
+    <main>
+        <!-- Letras de encabezado 1, son las más grandes, de mayor relevancia, van del 1 al 6 -->
+        <h1 class="titulosNegros">
+            Contacto
+        </h1>
+        <!-- Imgaen, se puede especificar el ancho y alto, en el caso de que solo se especifique uno, la imagen se escalará automáticamente. src es para indicar la posición de la imagen sea local o web. -->
+        <img class="reponsive centralizarImagen"
+            src="resources/images/equipo_uno_concentrado.jpeg"></img>
+        <p class = "contacto1 textosNegros">Estamos siempre abiertos a compartir contenido. Por favor, si tienes alguna duda, o simplemente
+        quieres compartir qué te ha parecido nuestro contenido con nosotros, no dudes en contactarnos.</p>
+
+        <h2 class="aumentarTitulosContacto">
+            Comentarios
+        </h2>
+
+        <h2 class="aumentarTitulosContacto">
+            Modos de contacto
+        </h2>
+        <!-- Lista desordenada (unorder list) -->
+            <!-- lista -->
+            <ul>
+            <li>
+                <h3 class="aumentarTitulosContacto">
+                    Contacto por Página:
+                </h3>
+            </li>
+            <p class="textosNegros">Déjanos un mensaje por la página. Rellena tus datos y coméntanos lo que quieras. </p>
+        </ul>
+            <!-- Formulario -->
+            
+            <form>
+                <div class="form_container">
+                <!-- campo de texto -->
+                <div class="form_group">
+                <label for="fname" class="form_label">Nombre</label>
+                </div>
+                <!--<div class="tooltip form_group">  cuadrado del tooltip -->
+                    <!--<span class="tooltiptext">Introduce tu nombre</span> mensaje del tooltip -->
+                    <input class="border_color form_input form_margin_botton" type="text" placeholder=" &#xF007;" id="fname" name="fname" required max="40"
+                    class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Introduce tu nombre">
+                <!--</div> -->
+                <!-- campo de texto -->
+                <div class="form_group">
+                    <label for="lname" class="form_label">Teléfono</label>
+                </div>
+                <!-- <div class="tooltip form_group"> cuadrado del tooltip -->
+                <!--    <span class="tooltiptext">Introduce tu télefono</span> mensaje del tooltip -->
+                    <input class="border_color form_input form_margin_botton"  type="tel" placeholder=" &#xF095;" id="lname" name="lname" required max="15"
+                    class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Introduce tu teléfono">
+                <!-- </div> -->
+                <div class="form_group">
+                <!-- campo de texto -->
+                    <label for="lname" class="form_label"><i>Email</i></label>
+                </div>
+                <!-- <div class="tooltip form_group">  cuadrado del tooltip -->
+                    <!-- <span class="tooltiptext">Introduce tu email</span> <!-- mensaje del tooltip -->
+                    <input class="border_color form_input form_margin_botton" type="email" placeholder=" &#xF199;" id="lname" name="lname" required max="30"
+                    class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Introduce tu email">
+               <!--  </div> -->
+
+                <!-- campo de select, selección de campos -->
+                <div class="form_group">
+                <label for="lname" class="form_label">Motivo</label>
+                </div>
+                <!-- <div class="tooltip form_group"> cuadrado del tooltip -->
+                <!--    <span class="tooltiptext">Introduce el motivo de tu consulta</span>  mensaje del tooltip -->
+                <select class="border_color form_input form_select form_margin_botton" name="reason" id="reason" required
+                class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Introduce el motivo de tu consulta">
+                  <option value="consult">Consulta</option>
+                  <option value="suggestion">Recomendaciones</option>
+                  <option value="opinion">Opinión</option>
+                  <option value="review">Crítica Constructiva</option>
+                </select>
+                <!--</div> -->
+
+                <!-- campo radio button -->
+               <!-- <div class="tooltip form_margin_botton"> cuadrado del tooltip -->
+                  <!--  <span class="tooltiptext">Introduce el motivo de tu consulta</span>  mensaje del tooltip -->
+                <label for="sex" class="form_label" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione sexo">Sexo</label> 
+                <input class="form_radio" type="radio" id="male" name="sex" value="male">
+                <label for="male" class="form_radio">Masculino</label>
+                <input class="form_radio" type="radio" id="female" name="sex" value="female" >
+                <label for="female" class="form_radio">Femenino</label>
+                <input class="form_radio" type="radio" id="othter" name="sex" value="other" >
+                <label for="other" class="form_radio">No Responder</label>
+               <!-- </div>-->
+                <!-- textarea, cuadro de texto para añadir comentarios, cols especifica el ancho del texto, row el alto en lineas-->
+                <!-- mensaje del tooltip --><!-- <div class="tooltip form_group">--><!-- mensaje del tooltip -->  <!-- cuadrado del tooltip -->
+                   <!-- mensaje del tooltip  <span class="tooltiptext">Aqui dejas tu comentario</span> --><!-- mensaje del tooltip -->
+                    <textarea class="border_color form_textarea form_margin_botton" name="coment" id="coment" cols="30" rows="10"
+                    placeholder="Comenta lo que quieras." class="btn btn-primary" data-bs-toggle="tooltip" title="¡Aquí deja tu comentario!"></textarea>
+                <!--  </div>  -->
+                <!-- <div class="tooltip form_group">   cuadrado del tooltip -->
+                <!-- <span class="tooltiptext">Tienes que aceptar los terminos para enviar tu comentario</span>  mensaje del tooltip -->
+                <input class="form_margin_botton" type="checkbox" id="terms" name="terms" value="accept-terms" checked required>
+                <label for="form_label form_radio"
+                class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tienes que aceptar los terminos para enviar tu comentario">Aceptar los <a href="terms.html"><b>Términos y Servicios.</b></a></label>
+                <!-- </div> -->
+                <div> 
+                <input class="form_button" type="submit" value="Enviar" dirname="contact.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Enviar formulario.">
+                <input class="form_button" type="reset"  class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Restablecer información">
+                </div>
+                </div>
+            </form>
+
+            <!-- lista -->
+            <ul>
+            <li>
+                <h3 class="aumentarTitulosContacto">
+                    Correo Electrónico:
+                </h3>
+            </li>
+            <p class="textosNegros">Mándanos un <i>e-mail</i> a nuestra dirección de correo: <b>eq1@gmail.com</b></p>
+
+            <li>
+                <h3 class="aumentarTitulosContacto">
+                    Correo Ordinario:
+                </h3>
+            </li>
+            <p class="textosNegros">Si te va el rollo analógico, y quieres mándarnos un correo ordinario, nos encontrarás en la dirección: <b>Pl. Virgen
+                    Milagrosa, 11, 29017 Málaga</b></p>
+            <p><small>Por favor, no vengas en persona. No nos gusta mucho el trato físico... &#128517;</small></p>
+            <!-- iframe, es una ventana que muestra un trozo de la página de youtube, convenientemente la del video. -->
+            <iframe class = "reposive"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.1180292975423!2d-4.367823984712368!3d36.719726479965225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259120bfc4db3%3A0xec0ecedd8dc61902!2sCesur%20M%C3%A1laga%20Este%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1sen!2ses!4v1634147483727!5m2!1sen!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </ul>
+    </main>
+
+    <!-- Autores y símbolo de copyright -->
+
+
+    <footer class="footerNegro">
+            <div class = "gradiente">
+          <p>
+        Autores: alumnos "CFGS Desarrollo de Aplicaciones Multiplataforma".
+      </p>
+    </footer>
+
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+</body>
+<!-- Fin del html, termina el documento -->
+</html>
+</div>
