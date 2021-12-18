@@ -1,0 +1,78 @@
+.index {
+  background: url(resources/images/mario4.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+}
+
+.aboutus {
+  background: url(resources/images/doom9.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.servicios {
+  background-image: url("resources/images/SonicFinal6.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.contacto {
+  background-image: url("resources/images/megaman5.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.libre {
+  background-image: url("resources/images/pacmanfin6.png");
+  background-size: 100%;
+}
+
+/*Capa semi transparente*/
+/* Este clase .trasparent es de prueba... Miguel*/
+.trasparentindex {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+/*capas semi transparentes. María */
+.trasparentlibre {
+  background-color: rgba(99, 84, 240, 0.9);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+.transparentservicios {
+  background-color: rgba(3, 4, 66, 0.6);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+.trasparentabout {
+  background-color: rgba(194, 59, 6, 0.4);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+.trasparentcontacto {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 65%;
+  margin: 0px auto; /*Story3*/
+  padding: 5%; /*Story3*/
+}
+/* Gradiente del footer (Contactos) */
+.gradiente {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 121, 35, 0.2) 35%,
+    rgba(145, 0, 255, 0.2) 83%
+  );
+}

@@ -1,5 +1,9 @@
-/* Story 1: Punto 4 - Adolfo Salado */
 @import url("base.css");
 @import url("layout.css");
 @import url("menu.css");
-@import url("formulario.css");
+@import url("formularios.css");
+@import url("tablas.css");
+@import url("texto.css");
+@import url("imagenes.css");
+@import url("fondos.css");
+@import url("columnas.css");

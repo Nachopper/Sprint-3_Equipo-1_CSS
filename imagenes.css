@@ -1,0 +1,152 @@
+.opacidad {
+  opacity: 0.9; /*Con esto puedes cambiar la opacidad de una imagen*/
+}
+/*Con cada uno de los fondos siguientes cambiamos el color del fondo de las imagenes
+  de los iconos poniendolos con sus respectivos colores y transparencias*/
+.fondoImagen {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.fondoImagenAbout {
+  background-color: rgba(194, 59, 6, 0.4);
+}
+.fondoImagenServices {
+  background-color: rgba(3, 4, 66, 0.6);
+}
+.fondoImagenContacto {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.fondoImagenLibre {
+  background-color: rgba(99, 84, 240, 0.9);
+}
+.reflexionDebajo {
+  /*Esto refleja la imagen exactamente igual debajo de esta*/
+  -webkit-box-reflect: below; /*El below pones la imagen debajo pero puedes cambiarlo por otra posicion para que se cambie*/
+}
+.reflexionDegradado {
+  /*Lo mismo que el de arriba pero este te pone la imagen con un gradual que desaparece*/
+  -webkit-box-reflect: below 0px
+    /*La distancia de la otra seria lo que pone 0px*/
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /*Esta es la que hace el cambio linear*/
+}
+.reposive {
+  /*Esto permite que cambie conforme el tamaño de donde este*/
+  max-width: 100%; /*Ocupara el 100% de la parte en la que este de ancho, cambiando conforme el tamaño de la localización de este*/
+  height: auto; /*Se ajusta segun el ancho de la imagen que esta al 100%*/
+}
+.centralizarImagen {
+  margin-left: auto; /*Story3*/
+  margin-right: auto; /*Story3*/
+  display: block; /*El elemento genera un cuadro de elemento bloque como por ejemplo un parrafo o un header*/
+  width: 100%;
+}
+.Iconoinicio {
+  /*Esto no es Story 4*/
+  width: 50%;
+  margin-right: auto; /*Story3*/
+  margin-left: auto; /*Story3*/
+}
+.position {
+  /*Story3*/
+  position: relative;
+  right: 135%;
+}
+.position1 {
+  /*Story3*/
+  position: relative;
+  right: 67.5%;
+}
+.position2 {
+  /*Story3*/
+  position: relative;
+  right: 0;
+}
+.position3 {
+  /*Story3*/
+  position: relative;
+  left: 67.5%;
+}
+.position4 {
+  /*Story3*/
+  position: relative;
+  left: 135%;
+}
+.centralizarUnPoco {
+  margin-left: auto; /*Story3*/
+  margin-right: auto; /*Story3*/
+  display: auto;
+  width: 50%;
+}
+.bordeImagen {
+  /*El borde que tiene una imagen
+                Si es cuadrada depende del porcentage que le pongas le redondea
+                mas o menos las esquinas*/
+  border-radius: 100%;
+}
+.containerImagen {
+  /*Este es un contenedor de la imagen*/
+  position: relative;
+  width: 100%;
+}
+.containerImagencita {
+  /*Este es lo mismo que el anterior pero mas pequeño*/
+  position: relative;
+  width: 50%;
+}
+.imagenes {
+  /*Esto se pone para identificar la imagen y convertirlo en bloque y acerla responsive*/
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sobreponer {
+  /*Esto sera una variable que se pondra sobre una imagen cuando te pongas encima*/
+  position: absolute; /*La posicion no varia en el fondo y no ocupa espacio para las demas*/
+  bottom: 100%; /*Que lo rellene entero, hasta abajo*/
+  left: 0;
+  right: 0;
+  background-color: #c12828; /*Esto cambia el color del fondo de la imagen que se sobrepone*/
+  overflow: hidden; /*Que este oculta de serie hasta que se active*/
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease; /*La animacion que tiene con el tiempo que tarda y tipo*/
+}
+.sobreponer2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #c12828; /*Esto cambia el color del fondo de la imagen que se sobrepone*/
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 51%; /*Para poner los bordes redondeados*/
+}
+
+.containerImagen:hover .sobreponer {
+  /*Para cuando te pones encima aplica la clase sobreponer y ocupa el 100% del container donde esta*/
+  bottom: 0;
+  height: 100%;
+}
+.containerImagencita:hover .sobreponer2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.textitoImagen {
+  /*El texto que aparece encima de sobreponer cuando ocurre*/
+  white-space: nowrap; /*Crea todo el texto en una linea, da igual el sitio donde este*/
+  color: black; /*Esto cambia el color de la letra*/
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%; /*Distancia de arriba*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /*Que aparezca con las animaciones*/
+}
+.tablaResponsive {
+  /*Esto no pertenece a Story 4*/
+  width: 100%;
+}

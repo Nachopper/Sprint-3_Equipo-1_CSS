@@ -1,0 +1,147 @@
+/* Div que contiene todo el formulario, lo deja centrado */
+.form_container {
+  margin: auto; /*Story 3*/
+  max-width: 550px;
+  box-align: center;
+}
+.form_group {
+  width: 100%;
+}
+/* clase que determina el estilo de los labels */
+.form_label {
+  padding-left: 2%;
+  height: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: calc(12px + 1.5vw);
+}
+/* clase que determina el estilo de los inputs */
+.form_input {
+  width: 100%;
+  height: calc(2.5em - 1.1rem);
+  border: 0px;
+  border-color: lightgreen;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.7);
+  /* es necesario para mostrar los iconos del placeholder */
+  font-family: "FontAwesome", Arial;
+}
+
+/* definimos estilos para el textarea */
+.form_textarea {
+  /* es necesario para mostrar los iconos del placeholder */
+  font-family: "Font Awesome 5 Free";
+  width: 100%;
+  /* quitamos el borde para luego modificarlo a nuestro gusto */
+  border: none;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* definimos estilos para el select */
+.form_select {
+  height: 2.1em;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* definimos estilos para el radio buton */
+.form_radio {
+  font-size: calc(8px + 1.5vw);
+  font-family: Arial, sans-serif;
+  color: #707070;
+}
+
+.form_margin_botton {
+  margin-bottom: 1rem; /*Story3*/
+}
+
+/* definismo estilos de los botones */
+.form_button {
+  width: 100%;
+  height: 1.6em;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem; /*Story3*/
+  /* quitamos el borde por defecto, luego lo modificamos */
+  border: 0px;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px -5px rgb(0, 0, 0);
+}
+/* cambia el color de los botones al ser pulsados */
+.form_button:focus {
+  background-color: rgb(183, 122, 241);
+  color: lightgray;
+}
+
+/* Para modificar el color de los bordes */
+.border_color {
+  border: 2px solid #ccc !important;
+  border-top-color: green !important;
+  border-top-style: solid !important;
+  border-top-width: 2px !important;
+  border-right-color: green !important;
+  border-right-style: solid !important;
+  border-right-width: 2px !important;
+  border-bottom-color: blueviolet !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 3px !important;
+  border-left-color: green !important;
+  border-left-style: solid !important;
+  border-left-width: 2px !important;
+}
+
+/* cambiar el color cuando se posa sobre el campo input o text area */
+.form_textarea:hover,
+.form_input:hover {
+  background: rgb(138, 43, 226, 0.3);
+}
+
+/* Tooltip contenedor */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip texto */
+.tooltip .tooltiptext {
+  font-family: Arial;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 10%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip flecha */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Muestra el Tooltip cuando pones el cursor por encima */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

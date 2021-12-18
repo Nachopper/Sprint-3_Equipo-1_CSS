@@ -1,0 +1,15 @@
+.tabla_doom {
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: rgb(82, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+th {
+  background: rgba(241, 197, 1, 0.4);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}

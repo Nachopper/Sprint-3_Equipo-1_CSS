@@ -1,0 +1,24 @@
+.CONTACTOS {
+  /*Columnas y diseño Responsive*/
+  column-count: 1;
+  column-gap: 3em;
+  column-rule: 25px solid;
+  column-width: 200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Query para representar y adaptar columnas y contenido a dispositivos moviles*/
+@media (max-width: 415px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.columnas3 {
+  column-count: 3;
+  column-rule: 1px solid #bbb;
+  column-width: 140px;
+}

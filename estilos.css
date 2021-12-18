@@ -333,7 +333,7 @@ a:active {
   font-size: 5vw;
   color: black;
   text-decoration: none;
-  font-family: "Space Mono", monospace; /* STORY 2.- FORMATO - Apartado F */ /* Sprint 3 - Story 7: Punto 10 - Adolfo Salado */
+  font-family: "Space Mono", monospace; /* STORY 2.- FORMATO - Apartado F */
 }
 
 .textosNegros {
@@ -373,7 +373,7 @@ mark {
   text-align: justify;
   font-style: italic;
   text-indent: 15px;
-  font-family: "Fauna One", serif; /*Font Pairing - STORY 7: Apartado 10 */ /* Sprint 3 - Story 7: Punto 10 - Adolfo Salado */
+  font-family: "Fauna One", serif; /*Font Pairing - STORY 7: Apartado 10 */
 }
 
 #sobreNosotros {
@@ -402,7 +402,7 @@ mark {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
-  font-family: Cinzel, serif; /*Font Pairing - STORY 7: Apartado 10 */ /* Sprint 3 - Story 7: Punto 10 - Adolfo Salado */
+  font-family: Cinzel, serif; /*Font Pairing - STORY 7: Apartado 10 */
 }
 
 /* STORY 1.- FONDOS  (MARÍA)*/
